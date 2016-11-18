@@ -1,0 +1,285 @@
+/*
+Theme Name: NewPaper
+Theme URI: http://a2ztechnologies.in/newpaper
+Description: New Paper is simple responsive SEO friendly theme. 
+Version: 0.1
+Tags:  blog, news, featured-images, one-column, theme-options
+Text Domain: newpaper
+Domain Path: newpaper
+Author: Rajan
+Author URI: http://a2ztechnologies.in/
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,800,800italic);
+
+body{ font-family: 'Open Sans'; }
+
+/* ALIGN TEXT */
+.align-none{
+    text-align: none;
+}
+.align-left{
+    text-align: left;
+}
+.align-center{
+    text-align: center;
+}
+.align-justify{
+    text-align: justify;
+}
+.align-right{
+    text-align: right;
+}
+
+/* WORDPRESS */
+.alignleft,
+.alignright{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.alignnone,
+.aligncenter{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.alignleft{
+    float:left;
+    margin-right: 15px;
+}
+.alignright{
+    float:right;
+    margin-left: 15px;
+}
+.aligncenter{
+    clear:both;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.sticky,
+.gallery-caption,
+.screen-reader-text,
+.bypostauthor{}
+
+.wp-caption,
+.wp-caption p{
+    color: #ababab;
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 100% !important;
+}
+section .wp-caption p,
+section .wp-caption p.wp-caption-text{
+    color: #ababab;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 30px 0px;
+}
+.wp-caption img{
+    display: block;
+    margin: 0px auto;
+    max-width: 100% !important;
+}
+
+div.gallery dl.gallery-item img,
+div.gallery dl.gallery-item img a{
+    border: none !important;
+}
+
+#gallery-1 .gallery-caption{
+    color: #ababab;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 30px 0px;
+}
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Paper Defaults */
+body{ 
+	background:#efefef; 
+}
+img{ 
+	max-width:100%; 
+}
+.paper-container{
+	background:#FFFFFF;
+	padding:25px;
+	margin:25px 0px;
+}
+.paper-container h1,
+.paper-container h2,
+.paper-container h3,
+.paper-container h4,
+.paper-container h5,
+.paper-container h6{
+	color:#5c5656;
+}
+.paper-container h1,
+.paper-container h2,
+.paper-container h3
+{
+	font-weight:800;
+}
+.paper-container h4,
+.paper-container h5,
+.paper-container h6{
+	font-weight:600;
+}
+.paper-container h1 a,
+.paper-container h2 a,
+.paper-container h3 a,
+.paper-container h4 a,
+.paper-container h5 a,
+.paper-container h6 a{
+	color:#5c5656;
+}
+.paper-container h1{
+	font-size:36px;
+}
+.paper-container h2{
+	font-size:30px;
+}
+.paper-container h3{
+	font-size:26px;
+}
+.paper-container h4{
+	font-size:20px;
+}
+.paper-container h5{
+	font-size:16px;
+}
+.paper-container h6{
+	font-size:14px;
+}
+
+.paper-container p{
+	font-size:14px;
+	color:#4b4747;
+	line-height:1.8;
+}
+.paper-container p a{
+	color:#a0c13d;
+}
+.paper-container ul li{
+	font-size:14px;
+	color:#4b4747;
+	line-height:1.8;
+}
+.paper-container li a{
+	color:#4b4747;
+}
+.paper-container table{
+	border: 1px solid #ccc;
+	max-width:100%;
+}
+.paper-container table tr{}
+.paper-container table th {
+	border: 1px solid #ccc;
+	padding: 10px;
+	color:#4b4747;
+}
+.paper-container table td{
+	border: 1px solid #ccc;
+	padding: 10px;
+	color:#4b4747;
+}
+.paper-container dl{}
+.paper-container dl dt{
+	font-size:14px;
+	color:#4b4747;
+	line-height:1.8;
+	font-weight:600;
+}
+.paper-container dl dd{
+	font-size:14px;
+	color:#4b4747;
+	line-height:1.8;
+	font-weight:400;
+	font-style:italic;
+}
+
+.paper-container .paginate{
+	margin:15px 0px 0px 0px;
+}
+.paper-container .paginate .page-numbers {
+	color: #7e7e7e;
+	display: inline-block;
+	font-size: 14px;
+	min-width: 25px;
+	text-align: center;
+	min-height: 25px;
+	padding: 3px 10px;
+	border: 1px solid #bfbfbf;
+	text-decoration:none;
+}
+.paper-container .paginate .page-numbers.current{ 
+	border-color:transparent; 
+}
+.paper-container input[type="text"],
+.paper-container input[type="email"],
+.paper-container input[type="tel"],
+.paper-container input[type="number"],
+.paper-container textarea,
+.paper-container select{
+	color: #7e7e7e;
+	border: 1px solid #bfbfbf;
+	padding:5px 10px;
+	max-width:100%;
+	margin-bottom:15px;
+	border-radius:0px;
+}
+.paper-container input[type="submit"],
+.paper-container input[type="button"],
+.paper-container input[type="reset"],
+.paper-container btn{
+	border-radius: 0px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background:#4b4747;
+	color:#FFF;
+	border:none;
+	font-weight:600;
+}
+
+.paper-container .comment-list{}
+.paper-container .comment-list ul{ 
+	list-style:none; 
+}
+.paper-container .comment-list .comment-body{
+	border: 1px solid #e0e0e0;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.paper-container .comment-list .comment-respond {
+	background: #e0e0e0 none repeat scroll 0 0;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.paper-container .comment-list .comment-body .comment-author{ 
+	font-size:16px; 
+	font-weight:600; 
+	font-style:normal; 
+}
+.paper-container .comment-list .comment-body .comment-author a{ 
+	font-style:normal;
+}
+.paper-container .comment-list .comment-body .comment-author span{ 
+	font-size:14px; 
+	font-weight:400; 
+}
